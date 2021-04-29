@@ -1,19 +1,21 @@
 import { Component } from 'react'
+import { Provider } from 'react-redux';
+import { store } from './models';
 import './app.less'
 
 class App extends Component {
 
-  componentDidMount () {}
+  componentDidMount() { }
 
-  componentDidShow () {}
+  componentDidShow() { }
 
-  componentDidHide () {}
+  componentDidHide() { }
 
-  componentDidCatchError () {}
+  componentDidCatchError() { }
 
   // this.props.children 是将要会渲染的页面
-  render () {
-    return this.props.children
+  render() {
+    return <Provider store={store}>{this.props.children}</Provider>
   }
 }
 

@@ -1,24 +1,34 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
+import { connect } from 'react-redux'
 import './index.less'
 
-export default class Index extends Component {
 
-  componentWillMount () { }
+class Index extends Component {
 
-  componentDidMount () { }
+  componentWillMount() { }
 
-  componentWillUnmount () { }
+  componentDidMount() { }
 
-  componentDidShow () { }
+  componentWillUnmount() { }
 
-  componentDidHide () { }
+  componentDidShow() { }
 
-  render () {
+  componentDidHide() { }
+
+  render() {
+    const { global: { name } } = this.props
     return (
       <View className='index'>
-        <Text>hello,app</Text>
+        <Text>{name}</Text>
       </View>
     )
   }
 }
+export default connect(
+  ({ global }) => ({
+    global
+  }),
+  ({ global }) => ({
+    ...global
+  }))(Index)
