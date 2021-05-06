@@ -1,12 +1,12 @@
 import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
+import Taro from '@tarojs/taro'
+import { View, Text, Button } from '@tarojs/components'
 import { connect } from 'react-redux'
 import './index.less'
 
 
 class Index extends Component {
 
-  componentWillMount() { }
 
   componentDidMount() { }
 
@@ -21,6 +21,7 @@ class Index extends Component {
     return (
       <View className='index'>
         <Text>{name}</Text>
+        <Button type='primary' plain={false} onClick={() => Taro.navigateTo({ url: '/pages/detail/index' })}>go detail</Button>
       </View>
     )
   }

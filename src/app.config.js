@@ -1,30 +1,31 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/home/index'
+    'pages/my/index',
+    'pages/detail/index'
   ],
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
+    navigationBarBackgroundColor: '#9b63cd',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: '#fff'
   },
   tabBar:{
-    color: 'black',
-    selectedColor: 'red',
-    backgroundColor: 'white',
+    color: '#FFC0CB',
+    selectedColor: '#9b63cd',
+    backgroundColor: '#fff',
     list:[
       {
         pagePath:"pages/index/index",
         text:"首页",
-        //iconPath:"pages/images/a.jpg",
-        //selectedIconPath:"pages/images/b.jpg"
+        iconPath:"assets/images/chart.png",
+        selectedIconPath:"assets/images/chart.png"
       },
       {
-        pagePath:"pages/home/index",
+        pagePath:"pages/my/index",
         text:"我的",
-        //iconPath:"pages/images/a.jpg",
-        //selectedIconPath:"pages/images/b.jpg"
+        iconPath:"assets/images/caramer.png",
+        selectedIconPath:"assets/images/caramer.png"
       }
     ]
   }
