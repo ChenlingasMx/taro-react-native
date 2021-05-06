@@ -10,7 +10,9 @@ cd taro-native-shell
 yarn install
 # 启动ios
 cd ios
+# 下载ios依赖
 pod install
-yarn ios
+# 启动项目
+yarn run ios
 ```
 
