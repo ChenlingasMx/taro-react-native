@@ -1,6 +1,6 @@
 export default {
   backgroundTextStyle: 'light',
-  navigationBarBackgroundColor: '#9b63cd',
+  navigationBarBackgroundColor: 'red',
   navigationBarTextStyle: '#fff',
   navigationBarTitleText: '详情'
 }
