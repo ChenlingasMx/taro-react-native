@@ -1,5 +1,5 @@
 # taro-react-native
-taro编译react-native,需提前配置好ios环境,可参考react-native官方文档进行配置
+taro可同时编译h5,小程序,react-native,编译rn需提前配置好ios和android环境,可参考react-native官方文档进行配置
 ```bash
 # 下载依赖
 yarn install
