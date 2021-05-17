@@ -17,4 +17,14 @@ pod install
 # 启动项目
 yarn run ios
 ```
+#### h5和小程序
+```bash
+  yarn install
+  npm run dev:weapp 
+  npm run dev:tt
+  npm run dev:h5
+  npm run dev:rn
+  npm run dev:qq
+  npm run dev:jd
+  ```
 
